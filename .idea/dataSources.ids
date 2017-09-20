@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - trustafis@192.168.3.80" uuid="82047f37-c96f-42a5-88a9-12495964b3c1">
+    <database-info product="MySQL" version="5.6.36" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="trustafis"/>
+      <table id="2" parent="1" name="BSP_DATA_SYN"/>
+      <table id="3" parent="1" name="BSP_ENGINE_REQ"/>
+      <table id="4" parent="1" name="BSP_ENGINE_RESP"/>
+      <table id="5" parent="1" name="BSP_LINKED_ACCOUNT"/>
+      <table id="6" parent="1" name="BSP_SYS_LOG"/>
+      <table id="7" parent="1" name="TAS_1TO1_VERIFY_RESULT">
+        <comment>1:1比对结果集表</comment>
+      </table>
+      <table id="8" parent="1" name="TAS_DUPLICATE_DETAIL">
+        <comment>查重结果集明细表</comment>
+      </table>
+      <table id="9" parent="1" name="TAS_DUPLICATE_RESULT">
+        <comment>查重结果集表</comment>
+      </table>
+      <table id="10" parent="1" name="TAS_FPIMAGE">
+        <comment>指纹图像表</comment>
+      </table>
+      <table id="11" parent="1" name="TAS_FP_IMG_BUFFER">
+        <comment>图片缓存临时表</comment>
+      </table>
+      <table id="12" parent="1" name="TAS_FP_NODE">
+        <comment>比对引擎节点信息表</comment>
+      </table>
+      <table id="13" parent="1" name="TAS_FP_TEMPLATE">
+        <comment>指纹模板表</comment>
+      </table>
+      <table id="14" parent="1" name="TAS_FP_TEMPLATE_0">
+        <comment>指纹模板表</comment>
+      </table>
+      <table id="15" parent="1" name="TAS_FP_TP_BUFFER">
+        <comment>指纹模板变更表</comment>
+      </table>
+      <table id="16" parent="1" name="TAS_LIBRARY">
+        <comment>指纹库别表</comment>
+      </table>
+      <table id="17" parent="1" name="TAS_LOG_BUSINESS">
+        <comment>支撑系统日志表</comment>
+      </table>
+      <table id="18" parent="1" name="TAS_LOG_DATA_SYN">
+        <comment>数据同步日志表</comment>
+      </table>
+      <table id="19" parent="1" name="TAS_LOG_DATA_SYN_copy">
+        <comment>数据同步日志表</comment>
+      </table>
+      <table id="20" parent="1" name="TAS_LOG_SYSTEM">
+        <comment>运维系统日志表</comment>
+      </table>
+      <table id="21" parent="1" name="TAS_LOG_SYSTEM_copy">
+        <comment>运维系统日志表</comment>
+      </table>
+      <table id="22" parent="1" name="TAS_MONITOR_INFO"/>
+      <table id="23" parent="1" name="TAS_MON_ENV_STATISTIC">
+        <comment>运行环境监控信息表</comment>
+      </table>
+      <table id="24" parent="1" name="TAS_MON_SERVICE_STATISTIC">
+        <comment>业务统计监控信息表</comment>
+      </table>
+      <table id="25" parent="1" name="TAS_MON_WARN">
+        <comment>监控报警信息表</comment>
+      </table>
+      <table id="26" parent="1" name="TAS_REPORT_HOME"/>
+      <table id="27" parent="1" name="TAS_SYN_DATA_BUFFER">
+        <comment>数据同步缓存表</comment>
+      </table>
+      <table id="28" parent="1" name="TAS_SYS_CODE">
+        <comment>字典代码表</comment>
+      </table>
+      <table id="29" parent="1" name="TAS_SYS_MANAGER">
+        <comment>系统管理员信息表</comment>
+      </table>
+      <table id="30" parent="1" name="TAS_SYS_ORDER">
+        <comment>系统命令表</comment>
+      </table>
+      <table id="31" parent="1" name="TAS_SYS_ORDER_RESULT">
+        <comment>系统命令结果表</comment>
+      </table>
+      <table id="32" parent="1" name="TAS_SYS_PAGE">
+        <comment>页面信息表</comment>
+      </table>
+      <table id="33" parent="1" name="TAS_SYS_ROLE">
+        <comment>角色信息表</comment>
+      </table>
+      <table id="34" parent="1" name="TAS_SYS_SETTING">
+        <comment>运维参数设置表</comment>
+      </table>
+      <table id="35" parent="1" name="TAS_TASK">
+        <comment>任务队列表</comment>
+      </table>
+      <table id="36" parent="1" name="TAS_TEST_FP_VERIFY_LOG">
+        <comment>比对结果日志表</comment>
+      </table>
+      <table id="37" parent="1" name="TAS_TEST_TP_BUILD_LOG">
+        <comment>建模结果日志表</comment>
+      </table>
+      <table id="38" parent="1" name="TAS_X2N_IDENTIFY_DETAIL">
+        <comment>X:N比对结果集明细表</comment>
+      </table>
+      <table id="39" parent="1" name="TAS_X2N_IDENTIFY_RESULT">
+        <comment>X:N比对结果集表</comment>
+      </table>
+      <view id="40" parent="1" name="TAS_V_LOG_BUSINESS">
+        <comment>VIEW</comment>
+      </view>
+      <routine id="41" parent="1" name="JOB_CLEAN_MONITOR_DATA">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="42" parent="1" name="JOB_MONITOR_UPDATE">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="43" parent="1" name="JOB_MONITOR_UPDATE_NETWORK">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <column id="44" parent="2" name="REQ_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="45" parent="2" name="CRET">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="46" parent="2" name="ENT_T">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="47" parent="2" name="REQ_ACT">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="48" parent="2" name="RES_CODE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="49" parent="2" name="RES_MSG">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="50" parent="2" name="STATUS">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="51" parent="2" name="PRIMARY">
+        <columns>REQ_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="52" parent="3" name="REQ_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="53" parent="3" name="CRET">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="54" parent="3" name="DATA">
+        <data-type>blob</data-type>
+      </column>
+      <column id="55" parent="3" name="IP_ADDR">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="56" parent="3" name="REQ_ACT">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="57" parent="3" name="PRIMARY">
+        <columns>REQ_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="4" name="REQ_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="59" parent="4" name="COST">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="60" parent="4" name="CRET">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="61" parent="4" name="DATA">
+        <data-type>blob</data-type>
+      </column>
+      <column id="62" parent="4" name="ENT_T">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="63" parent="4" name="REPT_T">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="64" parent="4" name="REQ_ACT">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="65" parent="4" name="REQ_REPT">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="66" parent="4" name="RES_CODE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="67" parent="4" name="RES_MSG">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <key id="68" parent="4" name="PRIMARY">
+        <columns>REQ_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="69" parent="5" name="ACCOUNT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="70" parent="5" name="CREATE_TIME">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="71" parent="5" name="FIRM_CONTACT">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="72" parent="5" name="FIRM_CONTACT_MAIL">
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="73" parent="5" name="FIRM_CONTACT_PHONE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="74" parent="5" name="FIRM_NAME">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="75" parent="5" name="MODIFY_TIME">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="76" parent="5" name="PASSWORD">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="77" parent="5" name="TERM">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="78" parent="5" name="PRIMARY">
+        <columns>ACCOUNT</columns>
+        <primary>1</primary>
+      </key>
+      <column id="79" parent="6" name="SEQ_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="80" parent="6" name="BEGIN_TIME">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="81" parent="6" name="COST">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="82" parent="6" name="END_TIME">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="83" parent="6" name="REQ_ACT">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="84" parent="6" name="REQ_ID">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="85" parent="6" name="RES_CODE">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="86" parent="6" name="PRIMARY">
+        <columns>SEQ_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="87" parent="7" name="VERIFY_RESULT_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="88" parent="7" name="VERIFY_RESULT_ID">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="89" parent="7" name="TASK_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="90" parent="7" name="TASK_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="91" parent="7" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="92" parent="7" name="VERIFY_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="93" parent="7" name="VERIFY_SOURCE_DATA">
+        <data-type>text</data-type>
+      </column>
+      <column id="94" parent="7" name="VERIFIED_FP_COUNT">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="95" parent="7" name="VERIFY_RESULT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="96" parent="7" name="VERIFIED_RANK1_FP_INDEX">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="97" parent="7" name="VERIFIED_RANK1_FP_SOURCE">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="98" parent="7" name="MATCHING_THRESHOLD">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="99" parent="7" name="VERIFY_SUCCESS_FLAG">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="100" parent="7" name="RESULT_CODE">
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="101" parent="7" name="RESULT_MSG">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="102" parent="7" name="ACTION_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="103" parent="7" name="READ_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="104" parent="7" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="105" parent="7" name="FK_PERSON_ID_FK2">
+        <columns>PERSON_ID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="106" parent="7" name="FK_TASK_ID_FK">
+        <columns>TASK_UUID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="107" parent="7" name="PRIMARY">
+        <columns>VERIFY_RESULT_UUID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="108" parent="8" name="DUPLICATE_DETAIL_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="109" parent="8" name="DUPLICATE_RESULT_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="110" parent="8" name="RESULT_RANK">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="111" parent="8" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="112" parent="8" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="113" parent="8" name="FP_TEMPLATE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="114" parent="8" name="RESULT_FLAG">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="115" parent="8" name="SCORE">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="116" parent="8" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="117" parent="8" name="PRIMARY">
+        <columns>DUPLICATE_DETAIL_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="118" parent="9" name="DUPLICATE_RESULT_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="119" parent="9" name="DUPLICATE_RESULT_ID">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="120" parent="9" name="TASK_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="121" parent="9" name="TASK_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="122" parent="9" name="REQUEST_FP_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="123" parent="9" name="PERSON_ID">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="124" parent="9" name="DUPLICATE_PERSON_COUNT">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="125" parent="9" name="POLICY_CODE">
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="126" parent="9" name="RESULT_CODE">
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="127" parent="9" name="RESULT_MSG">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="128" parent="9" name="CONTENT">
+        <data-type>text</data-type>
+      </column>
+      <column id="129" parent="9" name="ACTION_STATU">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="130" parent="9" name="READ_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="131" parent="9" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="132" parent="9" name="FK_DUPLICATE_TASK_ID_FK">
+        <columns>TASK_UUID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="133" parent="9" name="PRIMARY">
+        <columns>DUPLICATE_RESULT_UUID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="134" parent="10" name="FP_IMAGE_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="135" parent="10" name="FP_IMAGE_FILE_NAME">
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="136" parent="10" name="FP_DATASOURCE_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="137" parent="10" name="LIBRARY_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="138" parent="10" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="139" parent="10" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="140" parent="10" name="FP_IMAGE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="141" parent="10" name="FP_INDEX_CODE">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="142" parent="10" name="FP_IMG_DETAIL_ID">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="143" parent="10" name="QUALITY_LEVEL">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="144" parent="10" name="QUALITY_SCORE">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="145" parent="10" name="IMAGE_FORMAT_CODE">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="146" parent="10" name="IMAGE_DATA">
+        <data-type>longblob</data-type>
+      </column>
+      <column id="147" parent="10" name="COL_STATU_CODE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="148" parent="10" name="EXTRACTED_FLAG">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="149" parent="10" name="EXTRACTED_SPEND_TIME">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="150" parent="10" name="EXTRACTED_FINISH_TIME">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="151" parent="10" name="FP_TEMPLATE_UNIQUE_NO">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="152" parent="10" name="FP_DEVICE_CODE">
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="153" parent="10" name="UPDATE_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="154" parent="10" name="FP_DEVICE_SN">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="155" parent="10" name="COLLECT_PLACE">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="156" parent="10" name="COLLECT_PERSON">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="157" parent="10" name="COLLECT_TIME">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="158" parent="10" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="159" parent="10" name="PRIMARY">
+        <columns>FP_IMAGE_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="160" parent="11" name="FP_IMG_BUFFER_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="161" parent="11" name="TASK_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="162" parent="11" name="FOREIN_REQUEST_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="163" parent="11" name="FP_IMAGE_NO">
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="164" parent="11" name="IMAGE_DATA">
+        <data-type>longblob</data-type>
+      </column>
+      <column id="165" parent="11" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="166" parent="11" name="PRIMARY">
+        <columns>FP_IMG_BUFFER_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="167" parent="12" name="MASTER_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(7)</data-type>
+      </column>
+      <column id="168" parent="12" name="NODE_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(7)</data-type>
+      </column>
+      <column id="169" parent="12" name="ENR_THREAD">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="170" parent="12" name="VER_THREAD">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="171" parent="12" name="IDE_THREAD">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="172" parent="12" name="DATA_ZONE">
+        <data-type>varchar(512)</data-type>
+      </column>
+      <column id="173" parent="12" name="ONLINE_STAT">
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="174" parent="12" name="ENR_C_HOUR">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="175" parent="12" name="ENR_C_DAY">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="176" parent="12" name="VER_C_HOUR">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="177" parent="12" name="VER_C_DAY">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="178" parent="12" name="IDE_C_HOUR">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="179" parent="12" name="IDE_C_DAY">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <key id="180" parent="12" name="PRIMARY">
+        <columns>MASTER_ID
+NODE_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="181" parent="13" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="182" parent="13" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="183" parent="13" name="FP_TEMPLATE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="184" parent="13" name="FP_TEMPLATE_UNIQUE_NO">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="185" parent="13" name="FP_INDEX_CODE">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="186" parent="13" name="FP_DATASOURCE_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="187" parent="13" name="FP_EXCHANGE_FILE_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="188" parent="13" name="TEMPLATE">
+        <data-type>varchar(4000)</data-type>
+      </column>
+      <column id="189" parent="13" name="TEMPLATE_B">
+        <data-type>longblob</data-type>
+      </column>
+      <column id="190" parent="13" name="EXT_INFO">
+        <data-type>varchar(2000)</data-type>
+      </column>
+      <column id="191" parent="13" name="FP_CATEGORY">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="192" parent="13" name="SINGULAR_POINT_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="193" parent="13" name="TEMPLATE_POINT_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="194" parent="13" name="TEMPLATE_SIZE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="195" parent="13" name="QUALITY_SCORE">
+        <data-type>float</data-type>
+      </column>
+      <column id="196" parent="13" name="ALG_CODE">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="197" parent="13" name="ALG_VERSION">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="198" parent="13" name="FP_BLOCK_INDEX">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="199" parent="13" name="COL_STATU_CODE">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="200" parent="13" name="FP_DEVICE_CODE">
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="201" parent="13" name="FP_DEVICE_SN">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="202" parent="13" name="ACTIVE_STATU">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="203" parent="13" name="UPDATE_STATU">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="204" parent="13" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="205" parent="13" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="206" parent="13" name="IDX_FP_TEMPLATE_BLOCK_INDEX">
+        <columns>FP_BLOCK_INDEX</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="207" parent="13" name="IDX_FP_TEMPLATE_MODIFY_DATE">
+        <columns>MODIFY_DATE</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="208" parent="13" name="PRIMARY">
+        <columns>PERSON_ID
+FP_VERSION_CODE
+FP_TEMPLATE_NO</columns>
+        <primary>1</primary>
+      </key>
+      <column id="209" parent="14" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="210" parent="14" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="211" parent="14" name="FP_TEMPLATE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="212" parent="14" name="FP_TEMPLATE_UNIQUE_NO">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="213" parent="14" name="FP_INDEX_CODE">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="214" parent="14" name="FP_DATASOURCE_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="215" parent="14" name="FP_EXCHANGE_FILE_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="216" parent="14" name="TEMPLATE">
+        <data-type>varchar(4000)</data-type>
+      </column>
+      <column id="217" parent="14" name="TEMPLATE_B">
+        <data-type>longblob</data-type>
+      </column>
+      <column id="218" parent="14" name="EXT_INFO">
+        <data-type>varchar(2000)</data-type>
+      </column>
+      <column id="219" parent="14" name="FP_CATEGORY">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="220" parent="14" name="SINGULAR_POINT_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="221" parent="14" name="TEMPLATE_POINT_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="222" parent="14" name="TEMPLATE_SIZE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="223" parent="14" name="QUALITY_SCORE">
+        <data-type>float</data-type>
+      </column>
+      <column id="224" parent="14" name="ALG_CODE">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="225" parent="14" name="ALG_VERSION">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="226" parent="14" name="FP_BLOCK_INDEX">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="227" parent="14" name="COL_STATU_CODE">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="228" parent="14" name="FP_DEVICE_CODE">
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="229" parent="14" name="FP_DEVICE_SN">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="230" parent="14" name="ACTIVE_STATU">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="231" parent="14" name="UPDATE_STATU">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="232" parent="14" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="233" parent="14" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="234" parent="14" name="IDX_FP_TEMPLATE_BLOCK_INDEX">
+        <columns>FP_BLOCK_INDEX</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="235" parent="14" name="IDX_FP_TEMPLATE_MODIFY_DATE">
+        <columns>MODIFY_DATE</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="236" parent="14" name="PRIMARY">
+        <columns>PERSON_ID
+FP_VERSION_CODE
+FP_TEMPLATE_NO</columns>
+        <primary>1</primary>
+      </key>
+      <column id="237" parent="15" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="238" parent="15" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="239" parent="15" name="FP_TEMPLATE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="240" parent="15" name="FP_TEMPLATE_UNIQUE_NO">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="241" parent="15" name="FP_INDEX_CODE">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="242" parent="15" name="SERIAL_NUMBER">
+        <mandatory>1</mandatory>
+        <data-type>bigint(8)</data-type>
+      </column>
+      <column id="243" parent="15" name="FP_DATASOURCE_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="244" parent="15" name="TEMPLATE">
+        <data-type>varchar(4000)</data-type>
+      </column>
+      <column id="245" parent="15" name="TEMPLATE_B">
+        <data-type>longblob</data-type>
+      </column>
+      <column id="246" parent="15" name="EXT_INFO">
+        <data-type>varchar(2000)</data-type>
+      </column>
+      <column id="247" parent="15" name="FP_BLOCK_INDEX">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="248" parent="15" name="COL_STATU_CODE">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="249" parent="15" name="ACTIVE_STATU">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="250" parent="15" name="UPDATE_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="251" parent="15" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="252" parent="15" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="253" parent="15" name="IDX_FP_TP_BUFFER_SERIAL_NUMBER">
+        <columns>SERIAL_NUMBER</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="254" parent="15" name="PRIMARY">
+        <columns>PERSON_ID
+FP_VERSION_CODE
+FP_TEMPLATE_NO</columns>
+        <primary>1</primary>
+      </key>
+      <column id="255" parent="16" name="LIBRARY_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="256" parent="16" name="VERIFY_LIBRARY_GOAL">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="257" parent="16" name="IDENTIFY_LIBRARY_GOAL">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="258" parent="16" name="LIBRARY_ACTIVIETY_FLAG">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="259" parent="16" name="MODIFY_STATE">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="260" parent="16" name="LIBRARY_DESC">
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="261" parent="16" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="262" parent="16" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="263" parent="16" name="PRIMARY">
+        <columns>LIBRARY_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="264" parent="17" name="LOG_BUS_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="265" parent="17" name="ACTION_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="266" parent="17" name="FOREIN_REQUEST_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="267" parent="17" name="SESSION_ID">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="268" parent="17" name="RESULT_FLAG">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="269" parent="17" name="RESULT_CODE">
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="270" parent="17" name="RESULT_MSG">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="271" parent="17" name="CONTENT">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="272" parent="17" name="RESULT_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="273" parent="17" name="DEVICE_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="274" parent="17" name="APP_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="275" parent="17" name="CLIENT_IP">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="276" parent="17" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="277" parent="17" name="logFlag">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <key id="278" parent="17" name="PRIMARY">
+        <columns>LOG_BUS_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="279" parent="18" name="TEMPLATE">
+        <data-type>varchar(4000)</data-type>
+      </column>
+      <column id="280" parent="18" name="IMAGE_MD5">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="281" parent="18" name="LOG_DATA_SYN_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="282" parent="18" name="SYN_LIBRARY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="283" parent="18" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="284" parent="18" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="285" parent="18" name="FP_TEMPLATE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="286" parent="18" name="SERIAL_NUM">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="287" parent="18" name="OPERATE_TYPE">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="288" parent="18" name="RESULT_FLAG">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="289" parent="18" name="RESULT_CODE">
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="290" parent="18" name="CONTENT">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="291" parent="18" name="RETRY_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="292" parent="18" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="293" parent="18" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="294" parent="18" name="PRIMARY">
+        <columns>LOG_DATA_SYN_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="295" parent="19" name="TEMPLATE">
+        <data-type>varchar(4000)</data-type>
+      </column>
+      <column id="296" parent="19" name="IMAGE_MD5">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="297" parent="19" name="LOG_DATA_SYN_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="298" parent="19" name="SYN_LIBRARY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="299" parent="19" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="300" parent="19" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="301" parent="19" name="FP_TEMPLATE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="302" parent="19" name="SERIAL_NUM">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="303" parent="19" name="OPERATE_TYPE">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="304" parent="19" name="RESULT_FLAG">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="305" parent="19" name="RESULT_CODE">
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="306" parent="19" name="CONTENT">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="307" parent="19" name="RETRY_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="308" parent="19" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="309" parent="19" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="310" parent="19" name="PRIMARY">
+        <columns>LOG_DATA_SYN_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="311" parent="20" name="LOG_SYSTEM_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="312" parent="20" name="TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+      </column>
+      <column id="313" parent="20" name="OPERATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="314" parent="20" name="CONTENT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="315" parent="20" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="316" parent="20" name="CREATE_BY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <key id="317" parent="20" name="PRIMARY">
+        <columns>LOG_SYSTEM_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="318" parent="21" name="LOG_SYSTEM_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="319" parent="21" name="TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+      </column>
+      <column id="320" parent="21" name="OPERATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="321" parent="21" name="CONTENT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="322" parent="21" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="323" parent="21" name="CREATE_BY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <key id="324" parent="21" name="PRIMARY">
+        <columns>LOG_SYSTEM_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="325" parent="22" name="IP">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="326" parent="22" name="DATA_IP">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="327" parent="22" name="VERIFY_STATUS">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="328" parent="22" name="EXTRACT_STATUS">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="329" parent="22" name="SYNC_STATUS">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="330" parent="22" name="EXTRACT_COUNT">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="331" parent="22" name="TEMPLATE_COUNT">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="332" parent="22" name="LAST_EXTRACT_TIME">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="333" parent="22" name="CURRENT_SYNC_NUMBER">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="334" parent="22" name="MASTER_TIME">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="335" parent="22" name="MODELING_TIME">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="336" parent="22" name="SYNC_TIME">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="337" parent="22" name="SYNC_TOTAL">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="338" parent="22" name="LAST_SYNC_TIME">
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="339" parent="22" name="KB">
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="340" parent="23" name="MON_ENV_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="341" parent="23" name="ENGINE_CLUSTER_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="342" parent="23" name="ENGINE_SERVER_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="343" parent="23" name="ENGINE_SERVER_BIOMETRICS_MODEL">
+        <mandatory>1</mandatory>
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="344" parent="23" name="ENGINE_SERVER_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="345" parent="23" name="ENGINE_SERVER_IP">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="346" parent="23" name="ENGINE_SERVER_MAC">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="347" parent="23" name="ENGINE_SERVER_CPU">
+        <data-type>varchar(6)</data-type>
+      </column>
+      <column id="348" parent="23" name="ENGINE_SERVER_PORT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="349" parent="23" name="ENGINE_WORKSTATION_STATUS">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="350" parent="23" name="ENGINE_WARN_FIELD">
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="351" parent="23" name="ENGINE_NETWORK_STATUS">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="352" parent="23" name="ENGINE_RUNNING_TIME">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="353" parent="23" name="ENGINE_LODA_FINGER_NUMBER">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="354" parent="23" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="355" parent="23" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="356" parent="23" name="PRIMARY">
+        <columns>MON_ENV_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="357" parent="24" name="MON_SERVICE_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="358" parent="24" name="ENGINE_CLUSTER_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="359" parent="24" name="ENGINE_SERVER_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="360" parent="24" name="SERVICE_KEY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="361" parent="24" name="TOTAL_VALUE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="362" parent="24" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="363" parent="24" name="PRIMARY">
+        <columns>MON_SERVICE_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="364" parent="25" name="WARN_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="365" parent="25" name="WARN_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(6)</data-type>
+      </column>
+      <column id="366" parent="25" name="WARN_MESSAGE">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="367" parent="25" name="WARN_LEVEL">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="368" parent="25" name="WARN_SERVER_NAME">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="369" parent="25" name="WARN_SERVER_IP">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="370" parent="25" name="WARN_SERVER_MAC">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="371" parent="25" name="NOTICE_WAY">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="372" parent="25" name="NOTICE_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="373" parent="25" name="WARN_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="374" parent="25" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="375" parent="25" name="CREATE_BY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="376" parent="25" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="377" parent="25" name="MODIFY_BY">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <key id="378" parent="25" name="PRIMARY">
+        <columns>WARN_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="379" parent="26" name="HOME_ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="380" parent="26" name="BUS_FAIL_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="381" parent="26" name="BUS_NUM">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="382" parent="26" name="BUS_TYPE_DATA">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="383" parent="26" name="FP_ADD_DATA">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="384" parent="26" name="FP_NUM">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="385" parent="26" name="SERVER_NUM">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="386" parent="26" name="SERVER_STATU_DATA">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="387" parent="26" name="TASK_STATU_DATA">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="388" parent="26" name="USER_NUM">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <key id="389" parent="26" name="PRIMARY">
+        <columns>HOME_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="390" parent="27" name="DH">
+        <mandatory>1</mandatory>
+        <data-type>varchar(19)</data-type>
+      </column>
+      <column id="391" parent="27" name="BBH">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="392" parent="27" name="CZLB">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="393" parent="27" name="CFSJ">
+        <mandatory>1</mandatory>
+        <data-type>varchar(14)</data-type>
+      </column>
+      <column id="394" parent="27" name="LSH">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="395" parent="27" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="396" parent="28" name="CODE_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="397" parent="28" name="CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="398" parent="28" name="CODE_MEAN">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="399" parent="28" name="TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="400" parent="28" name="TYPE_MEAN">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="401" parent="28" name="ISBASE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="402" parent="28" name="STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="403" parent="28" name="NOTE">
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="404" parent="28" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="405" parent="28" name="PRIMARY">
+        <columns>CODE_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="406" parent="29" name="MANAGER_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="407" parent="29" name="ACCOUNT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="408" parent="29" name="PASSWORD">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="409" parent="29" name="ROLE_ID">
+        <data-type>varchar(36)</data-type>
+      </column>
+      <column id="410" parent="29" name="IS_ROOT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="411" parent="29" name="STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="412" parent="29" name="LAST_LOGIN">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="413" parent="29" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="414" parent="29" name="CREATE_BY">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="415" parent="29" name="MODIFY_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="416" parent="29" name="MODIFY_BY">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <index id="417" parent="29" name="FK9ggo8gcdqij5ojser8pt1dymh">
+        <columns>ROLE_ID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="418" parent="29" name="PRIMARY">
+        <columns>MANAGER_ID</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="419" parent="29" name="FK9ggo8gcdqij5ojser8pt1dymh">
+        <columns>ROLE_ID</columns>
+        <ref-key>~.TAS_SYS_ROLE.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="420" parent="30" name="ORDER_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="421" parent="30" name="ORDER_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="422" parent="30" name="ORDER_SRC">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="423" parent="30" name="ORDER_LEVEL">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="424" parent="30" name="REQ_IP">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="425" parent="30" name="SERIAL_NUMBER">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="426" parent="30" name="ACTIVE_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="427" parent="30" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="428" parent="30" name="CREATE_BY">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="429" parent="30" name="SERIAL_NUM">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="430" parent="30" name="ORDER_CONTENT">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <key id="431" parent="30" name="PRIMARY">
+        <columns>ORDER_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="432" parent="31" name="ORDER_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="433" parent="31" name="MODEL_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="434" parent="31" name="SPEND_TIME">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="435" parent="31" name="RESULT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="436" parent="31" name="CONTENT">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="437" parent="31" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="438" parent="32" name="PAGE_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="439" parent="32" name="CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="440" parent="32" name="PCODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="441" parent="32" name="NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="442" parent="32" name="OPEN">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="443" parent="32" name="URL">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="444" parent="32" name="STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="445" parent="32" name="NOTE">
+        <data-type>varchar(250)</data-type>
+      </column>
+      <key id="446" parent="32" name="PRIMARY">
+        <columns>PAGE_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="447" parent="33" name="ROLE_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="448" parent="33" name="NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="449" parent="33" name="PURVIEW">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="450" parent="33" name="IS_ROOT">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="451" parent="33" name="NOTE">
+        <data-type>varchar(250)</data-type>
+      </column>
+      <key id="452" parent="33" name="PRIMARY">
+        <columns>ROLE_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="453" parent="34" name="SETTING_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="454" parent="34" name="APP_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="455" parent="34" name="MAIN_KEY">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="456" parent="34" name="SUB_KEY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="457" parent="34" name="VALUE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="458" parent="34" name="MODEFY_STATUS">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="459" parent="34" name="SHOW_STATUS">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="460" parent="34" name="PARANAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="461" parent="34" name="NOTE">
+        <data-type>varchar(250)</data-type>
+      </column>
+      <key id="462" parent="34" name="PRIMARY">
+        <columns>SETTING_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="463" parent="35" name="TASK_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="464" parent="35" name="TASK_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="465" parent="35" name="FOREIN_REQUEST_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="466" parent="35" name="TASK_COM_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="467" parent="35" name="TASK_COMMENT">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="468" parent="35" name="TASK_RESULT">
+        <data-type>text</data-type>
+      </column>
+      <column id="469" parent="35" name="TASK_RET_CODE">
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="470" parent="35" name="TASK_STATE">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="471" parent="35" name="TASK_COMPLETE_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="472" parent="35" name="TASK_RECEIVE_FLAG">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="473" parent="35" name="TASK_RECEIVE_DATE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="474" parent="35" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="475" parent="35" name="IDX_TASK_CREATE_DATE">
+        <columns>CREATE_DATE</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="476" parent="35" name="IDX_TASK_STATE">
+        <columns>TASK_STATE</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="477" parent="35" name="PRIMARY">
+        <columns>TASK_UUID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="478" parent="36" name="LOG_VERIFY_LOG_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="479" parent="36" name="TOP_NUMBER">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="480" parent="36" name="POLICY_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="481" parent="36" name="OPT_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="482" parent="36" name="RETURN_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="483" parent="36" name="SELF_FLAG">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="484" parent="36" name="START_TIME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="485" parent="36" name="SPEND_TIME">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="486" parent="36" name="FILTER_TIME">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="487" parent="36" name="FILTER_PERCENT">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="488" parent="36" name="PERSON_ID_REQUEST">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="489" parent="36" name="PERSON_ID_FOUND">
+        <data-type>varchar(300)</data-type>
+      </column>
+      <column id="490" parent="36" name="Filter_Threshold">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="491" parent="36" name="Matching_Threshold">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="492" parent="36" name="Matching_CNT">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="493" parent="36" name="Build_Score0">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="494" parent="36" name="Matching_Score0">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="495" parent="36" name="Filter_Score1">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="496" parent="36" name="Matching_Score1">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="497" parent="36" name="Filter_Score2">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="498" parent="36" name="Matching_Score2">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="499" parent="36" name="Filter_Score3">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="500" parent="36" name="Matching_Score3">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="501" parent="36" name="Filter_Score4">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="502" parent="36" name="Matching_Score4">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="503" parent="36" name="Filter_Score5">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="504" parent="36" name="Matching_Score5">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="505" parent="36" name="Filter_Score6">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="506" parent="36" name="Matching_Score6">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="507" parent="36" name="Filter_Score7">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="508" parent="36" name="Matching_Score7">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="509" parent="36" name="Filter_Score8">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="510" parent="36" name="Matching_Score8">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="511" parent="36" name="Filter_Score9">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="512" parent="36" name="Matching_Score9">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="513" parent="36" name="Filter_Score10">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="514" parent="36" name="Matching_Score10">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <key id="515" parent="36" name="PRIMARY">
+        <columns>LOG_VERIFY_LOG_ID
+TOP_NUMBER
+POLICY_CODE</columns>
+        <primary>1</primary>
+      </key>
+      <column id="516" parent="37" name="LOG_BUILD_LOG_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="517" parent="37" name="POLICY_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="518" parent="37" name="RETURN_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="519" parent="37" name="START_TIME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="520" parent="37" name="SPEND_TIME">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="521" parent="37" name="PERSON_ID_REQUEST">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="522" parent="37" name="Build_Threshold">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="523" parent="37" name="Build_Score0">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="524" parent="37" name="Build_Score1">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="525" parent="37" name="Build_Score2">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="526" parent="37" name="Build_Score3">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="527" parent="37" name="Build_Score4">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="528" parent="37" name="Build_Score5">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="529" parent="37" name="Build_Score6">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="530" parent="37" name="Build_Score7">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="531" parent="37" name="Build_Score8">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="532" parent="37" name="Build_Score9">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="533" parent="37" name="Build_Score10">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <key id="534" parent="37" name="PRIMARY">
+        <columns>LOG_BUILD_LOG_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="535" parent="38" name="IDENTIFY_DETAIL_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="536" parent="38" name="IDENTIFY_RESULT_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="537" parent="38" name="PERSON_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="538" parent="38" name="FP_VERSION_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="539" parent="38" name="FP_TEMPLATE_NO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="540" parent="38" name="RESPONSE_TOP_NUMBER">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="541" parent="38" name="SCORE">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="542" parent="38" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="543" parent="38" name="FK_X2N_DETAIL_RESULT_ID_FK">
+        <columns>IDENTIFY_RESULT_UUID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="544" parent="38" name="PRIMARY">
+        <columns>IDENTIFY_DETAIL_ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="545" parent="39" name="IDENTIFY_RESULT_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="546" parent="39" name="IDENTIFY_RESULT_ID">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="547" parent="39" name="TASK_UUID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="548" parent="39" name="TASK_ID">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="549" parent="39" name="POLICY_CODE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="550" parent="39" name="RESULT_FLAG">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="551" parent="39" name="RESULT_CODE">
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="552" parent="39" name="RESULT_MSG">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="553" parent="39" name="CONTENT">
+        <data-type>text</data-type>
+      </column>
+      <column id="554" parent="39" name="IDENTIFY_PERSON_COUNT">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="555" parent="39" name="IDENTIFY_FP_COUNT">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="556" parent="39" name="IDENTIFY_FP_TOTAL_COUNT">
+        <data-type>decimal(8)</data-type>
+      </column>
+      <column id="557" parent="39" name="SAME_PERSON_FLAG">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="558" parent="39" name="X2N_IDENTIFY_MODE">
+        <data-type>varchar(4)</data-type>
+      </column>
+      <column id="559" parent="39" name="ACTION_STATU">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="560" parent="39" name="READ_STATU">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="561" parent="39" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <index id="562" parent="39" name="FK_X2N_TASK_ID_FK">
+        <columns>TASK_UUID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="563" parent="39" name="PRIMARY">
+        <columns>IDENTIFY_RESULT_UUID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="564" parent="40" name="LOG_BUS_ID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="565" parent="40" name="ACTION_TYPE">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="566" parent="40" name="CREATE_DATE">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="567" parent="40" name="REQ_DATA">
+        <data-type>blob</data-type>
+      </column>
+      <column id="568" parent="40" name="CLIENT_IP">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="569" parent="40" name="RES_DATA">
+        <data-type>blob</data-type>
+      </column>
+      <column id="570" parent="40" name="COST">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="571" parent="40" name="RETRY_NUM">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="572" parent="40" name="RESULT_CODE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="573" parent="40" name="RESULT_MSG">
+        <data-type>varchar(200)</data-type>
+      </column>
+    </database-model>
+  </data-source>
+</component>

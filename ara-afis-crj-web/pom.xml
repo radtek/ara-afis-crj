@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>ara-afis-crj</artifactId>
+        <groupId>com.aratek</groupId>
+        <version>1.3.6.RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>ara-afis-crj-web</artifactId>
+    <packaging>war</packaging>
+    <name>ara-afis-crj-web</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.aratek</groupId>
+            <artifactId>ara-afis-crj-service</artifactId>
+            <version>1.3.6.RELEASE</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>TAC</finalName>
+    </build>
+</project>

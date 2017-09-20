@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ara-afis-crj.iml" filepath="$PROJECT_DIR$/ara-afis-crj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ara-afis-crj-dao/ara-afis-crj-dao.iml" filepath="$PROJECT_DIR$/ara-afis-crj-dao/ara-afis-crj-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ara-afis-crj-model/ara-afis-crj-model.iml" filepath="$PROJECT_DIR$/ara-afis-crj-model/ara-afis-crj-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ara-afis-crj-service/ara-afis-crj-service.iml" filepath="$PROJECT_DIR$/ara-afis-crj-service/ara-afis-crj-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ara-afis-crj-web/ara-afis-crj-web.iml" filepath="$PROJECT_DIR$/ara-afis-crj-web/ara-afis-crj-web.iml" />
+    </modules>
+  </component>
+</project>

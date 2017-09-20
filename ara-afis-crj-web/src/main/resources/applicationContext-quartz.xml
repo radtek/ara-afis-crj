@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <!-- 要调用的工作类 -->
+    <bean id="quartzJob" class="com.dao.expand.ThreadTaskImpl"></bean>
+
+    <!-- 定义首页数据统计任务和触发时间 -->
+    <bean id="jobQueryHomeData" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <!-- 调用的类 -->
+        <property name="targetObject"> <ref bean="quartzJob"/> </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod"> <value>queryHomeData</value> </property>
+    </bean>
+
+    <!-- 定义触发时间 -->
+    <bean id="doQueryHomeData"  class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+        <property name="jobDetail" ref="jobQueryHomeData" />
+        <!-- 延迟2秒触发 -->
+        <property name="startDelay" value="2000" />
+        <property name="repeatInterval" value="${tac.homeData}" />
+    </bean>
+
+    <!--&lt;!&ndash; 定义源库数据差异性比较任务和触发时间 &ndash;&gt;-->
+    <!--<bean id="jobQueryLibraryDiff" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--&lt;!&ndash; 调用的类 &ndash;&gt;-->
+        <!--<property name="targetObject"> <ref bean="quartzJob"/> </property>-->
+        <!--&lt;!&ndash; 调用类中的方法 &ndash;&gt;-->
+        <!--<property name="targetMethod"> <value>queryLibraryDiff</value> </property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 定义触发时间 &ndash;&gt;-->
+    <!--<bean id="doQueryLibraryDiff"  class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">-->
+        <!--<property name="jobDetail" ref="jobQueryLibraryDiff" />-->
+        <!--&lt;!&ndash; 延迟30秒触发 &ndash;&gt;-->
+        <!--<property name="startDelay" value="30000" />-->
+        <!--<property name="repeatInterval" value="${tac.libraryData}" />-->
+    <!--</bean>-->
+
+    <!-- 总管理类 -->
+    <bean id="startQuertz" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="doQueryHomeData"/>
+                <!--<ref bean="doQueryLibraryDiff"/>-->
+            </list>
+        </property>
+        <property name="startupDelay" value="0"/>
+    </bean>
+</beans>

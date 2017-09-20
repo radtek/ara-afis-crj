@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd"
+       default-autowire="byName" default-lazy-init="false">
+
+    <!-- 扫描项目路径  路径中带*.sql的为支持sql数据库，*.other的为支持nosql数据库-->
+    <context:component-scan base-package="com.services.other,com.dao.other" />
+
+    <!-- 配置边检数据库数据源 -->
+    <bean id="dataSource_bj" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+        <property name="driverClassName" value="${jdbc.driver.bj}" />
+        <property name="url" value="${jdbc.url.bj}" />
+        <property name="username" value="${jdbc.username.bj}"/>
+        <property name="password" value="${jdbc.password.bj}" />
+    </bean>
+
+    <bean id="sourceJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource_bj" />
+    </bean>
+</beans>
